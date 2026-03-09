@@ -22,5 +22,5 @@ Pipeline Orchestration
 
 ## Dataset Used
 
-Sample orders dataset
-
+Sample orders dataset:
+> https://raw.githubusercontent.com/MicrosoftLearning/dp-data/main/orders.csv
