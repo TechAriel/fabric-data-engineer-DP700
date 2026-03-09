@@ -38,6 +38,8 @@ Anonymous
 
 Purpose: Dataflows enable **ETL-style ingestion using Power Query transformations**.
 
+![Data Flow](screenshots/01-dataflow-created.png)
+
 ---
 
 ## Step 4 – Apply Data Transformation
@@ -56,6 +58,8 @@ MonthNo → Whole Number
 
 Purpose: This transformation extracts the **month component from the order date**, which is commonly used for time-based analytics.
 
+![Data Ftransformation](screenshots/02-power-query-transformation.png)
+
 ---
 
 ## Step 5 – Configure Data Destination
@@ -69,11 +73,11 @@ Destination type: Lakehouse
 Table name: ` orders `
 
 
-Load behavior:
-
-Append
+Load behavior: Append
 
 Purpose: This step defines how the transformed dataset is written in the analytics platform.
+
+![Load Destination](screenshots/03-lakehouse-destination.png)
 
 ---
 
@@ -82,6 +86,8 @@ Purpose: This step defines how the transformed dataset is written in the analyti
 Executed **Save & Run** to create and execute the Dataflow.
 
 Result: Data successfully loaded into the **Lakehouse orders table**.
+
+![Data Flow Success](screenshots/04-dataflow-run-success.png)
 
 ---
 
@@ -95,6 +101,8 @@ Selected dataflow: Dataflow 1
 
 Purpose: Pipelines allow orchestration and scheduling of ingestion processes.
 
+![Pipeline](screenshots/05-pipeline-created.png)
+
 ---
 
 ## Step 8 – Execute Pipeline
@@ -102,6 +110,8 @@ Purpose: Pipelines allow orchestration and scheduling of ingestion processes.
 Ran the pipeline to trigger the Dataflow execution.
 
 Result: Pipeline completed successfully.
+
+![Pipeline Success](screenshots/06-pipeline-success.png)
 
 ---
 
@@ -112,6 +122,8 @@ Navigated to the Lakehouse:
 Tables → orders
 
 Confirmed the dataset was successfully ingested.
+
+![Lakehouse Table](screenshots/07-lakehouse-orders-table.png)
 
 ---
 
