@@ -29,7 +29,7 @@ Analytics-ready Lakehouse Data
 ---
 
 ## Dataset Used
-https://raw.githubusercontent.com/MicrosoftLearning/dp-data/main/sales.csv
+Sample `sales.csv` dataset
 
 
 ---
