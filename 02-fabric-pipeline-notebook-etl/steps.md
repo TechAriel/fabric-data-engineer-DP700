@@ -81,6 +81,10 @@ Key operations include:
 
 ![Spark code](screenshots/06-notebook-code.png)
 
+The full notebook code used in this exercise is available in this folder: `/code/load_sales_notebook.py`
+
+This script contains the PySpark logic used to transform the ingested dataset and load it into a Delta table in the Fabric Lakehouse.
+
 ---
 
 ## Step 7 – Validate Notebook Execution
