@@ -17,9 +17,13 @@ Each exercise demonstrates practical implementation of Fabric components used in
 
 ## Exercises
 
-- **01 – Fabric Dataflows (Gen2) Lakehouse Ingestion:**
+- **01 – Fabric Dataflows (Gen2) Lakehouse Ingestion**
 
-Created a Dataflow (Gen2) ETL process and orchestrated it using a pipeline to load data into a Fabric Lakehouse.
+  Created a Dataflow (Gen2) ETL process and orchestrated it using a pipeline to load data into a Fabric Lakehouse.
+
+- **02 – Fabric Pipeline + Spark Notebook ETL**
+  
+  Implemented a data ingestion pipeline that copies external data into OneLake and processes it using an Apache Spark notebook before loading it into   a Lakehouse Delta table.
 
 ---
 ## Skills Demonstrated
