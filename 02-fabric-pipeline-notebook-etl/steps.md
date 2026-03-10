@@ -39,7 +39,7 @@ Purpose: This activity copies the raw dataset into **OneLake storage**.
 
 ## Step 4 – Verify Data Ingestion
 
-After running the pipeline, the dataset was confirmed in: Lakehouse → Files → new_data → sales.csv
+After running the pipeline, the dataset was confirmed in: `Lakehouse → Files → new_data → sales.csv`
 
 This verified successful ingestion of the raw dataset.
 
@@ -69,6 +69,61 @@ Key operations include:
 - Reordering selected columns
 - Writing results to a Delta table
 
-Example:
+
+---
+
+## Step 7 – Validate Notebook Execution
+
+The notebook was executed manually.
+
+Result: A new table named **sales** was created in the Lakehouse.
+
+---
+
+## Step 8 – Modify the Pipeline
+
+The pipeline was extended to orchestrate the entire ETL workflow.
+
+**New activities added:**
+
+1. Delete Data activity  
+Removes existing CSV files before ingestion.
+
+2. Copy Data activity  
+Copies fresh dataset from external source.
+
+3. Notebook activity  
+Runs the Spark notebook transformation.
+
+Pipeline workflow: Delete files → Copy data → Run notebook
+
+
+---
+
+## Step 9 – Parameterize Notebook Execution
+
+The pipeline passes a parameter to the notebook: `table_name = new_sales`
+
+This overrides the default table name and writes output to: `Lakehouse Tables → new_sales`
+
+
+---
+
+## Step 10 – Execute Pipeline
+
+The full pipeline was executed.
+
+All activities completed successfully.
+
+Final result: A new **Delta table (new_sales)** was created in the Lakehouse.
+
+---
+
+## Step 11 – Clean Up Resources
+
+The Fabric workspace was deleted to remove all created resources.
+
+
+
 
 
