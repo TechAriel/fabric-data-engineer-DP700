@@ -55,6 +55,19 @@ The Spark notebook performs several transformations:
 - Reorder and filter relevant columns
 - Load the transformed dataset into a **Delta table**
 
+## Notebook Implementation
+
+The Spark transformation logic used in this exercise is available in the folder:
+`code/load_sales_notebook.py`
+
+This file contains the PySpark logic executed in the Fabric notebook that:
+
+- Reads raw sales data from the Lakehouse files directory
+- Performs data transformations
+- Writes the processed dataset to a Delta table
+
+The code was originally developed and executed inside a **Microsoft Fabric notebook**, then exported as a Python script for version control and documentation purposes.
+
 ## Pipeline Workflow
 
 1️⃣ Delete previous ingestion files
