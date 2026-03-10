@@ -6,6 +6,8 @@ A new Microsoft Fabric workspace was created with Fabric capacity enabled.
 
 Purpose: Workspaces provide an isolated environment for managing Fabric assets such as pipelines, notebooks, and lakehouses.
 
+![Workspace](screenshots/01-pipeline-workspace-created.png)
+
 ---
 
 ## Step 2 – Create a Lakehouse
@@ -18,6 +20,8 @@ A folder named **new_data** was created under the Files section.
 
 Purpose: The lakehouse acts as the central storage layer for both raw and processed data.
 
+![Lakehouse](screenshots/02-pipeline-lakehouse-created.png)
+
 ---
 
 ## Step 3 – Create Data Pipeline
@@ -25,6 +29,8 @@ Purpose: The lakehouse acts as the central storage layer for both raw and proces
 A new pipeline named **Ingest Sales Data** was created.
 
 A **Copy Data activity** was configured to ingest data from an external HTTP source.
+
+![CopyData](screenshots/04-copy-data-config.png)
 
 Source dataset:
 ```
@@ -35,6 +41,8 @@ Destination: Lakehouse storage `Files/new_data/sales.csv`
 
 Purpose: This activity copies the raw dataset into **OneLake storage**.
 
+![Data Pipeline](screenshots/03-pipeline-created.png)
+
 ---
 
 ## Step 4 – Verify Data Ingestion
@@ -42,6 +50,8 @@ Purpose: This activity copies the raw dataset into **OneLake storage**.
 After running the pipeline, the dataset was confirmed in: `Lakehouse → Files → new_data → sales.csv`
 
 This verified successful ingestion of the raw dataset.
+
+![Raw Dataset](screenshots/05-sales-file-loaded.png)
 
 ---
 
@@ -69,6 +79,7 @@ Key operations include:
 - Reordering selected columns
 - Writing results to a Delta table
 
+![Spark code](screenshots/06-notebook-code.png)
 
 ---
 
@@ -77,6 +88,8 @@ Key operations include:
 The notebook was executed manually.
 
 Result: A new table named **sales** was created in the Lakehouse.
+
+![Notebook run success](screenshots/07-notebook-run-success.png)
 
 ---
 
@@ -97,6 +110,7 @@ Runs the Spark notebook transformation.
 
 Pipeline workflow: Delete files → Copy data → Run notebook
 
+![Pipeline activities](screenshots/08-pipeline-workflow.png)
 
 ---
 
