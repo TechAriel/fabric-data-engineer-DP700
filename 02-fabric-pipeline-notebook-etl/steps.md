@@ -120,6 +120,7 @@ The pipeline passes a parameter to the notebook: `table_name = new_sales`
 
 This overrides the default table name and writes output to: `Lakehouse Tables → new_sales`
 
+![Parametize Notebook](screenshots/12-parameterize-notebook.png)
 
 ---
 
@@ -129,7 +130,11 @@ The full pipeline was executed.
 
 All activities completed successfully.
 
+![Pipeline Run](screenshots/09-pipeline-run-success.png)
+
 Final result: A new **Delta table (new_sales)** was created in the Lakehouse.
+
+![Delta table](screenshots/10-lakehouse-table-created.png)
 
 ---
 
@@ -137,7 +142,7 @@ Final result: A new **Delta table (new_sales)** was created in the Lakehouse.
 
 The Fabric workspace was deleted to remove all created resources.
 
-
+![Deleting Workspace](screenshots/11-delete-workspace.png)
 
 
 
