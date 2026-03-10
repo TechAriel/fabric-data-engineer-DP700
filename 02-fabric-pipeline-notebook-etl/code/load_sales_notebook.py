@@ -8,6 +8,7 @@ Fabric notebook for processing sales data and loading it into a
 Lakehouse Delta table.
 """
 
+# Cell configured as parameter cell in notebook so that the variable declared in it are treated as parameters when running the notebook from a pipeline.
 table_name = "sales"
 
 from pyspark.sql.functions import *
