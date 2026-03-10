@@ -14,16 +14,16 @@ The pipeline ingests raw sales data from an external source, stores it in **OneL
 
 ## Architecture
 
-External Data Source (CSV)
-        ↓
-Fabric Pipeline – Copy Activity
-        ↓
-OneLake Storage (Files)
-        ↓
-Spark Notebook Transformation
-        ↓
-Delta Lake Table
-        ↓
+External Data Source (CSV)       
+        ↓         
+Fabric Pipeline – Copy Activity       
+        ↓          
+OneLake Storage (Files)       
+        ↓            
+Spark Notebook Transformation       
+        ↓            
+Delta Lake Table       
+        ↓               
 Analytics-ready Lakehouse Data
 
 ---
