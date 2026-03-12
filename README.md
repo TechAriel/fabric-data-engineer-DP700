@@ -25,6 +25,10 @@ Each exercise demonstrates practical implementation of Fabric components used in
   
   Implemented a data ingestion pipeline that copies external data into OneLake and processes it using an Apache Spark notebook before loading it into   a Lakehouse Delta table.
 
+  - **03 – Spark DataFrame Analysis in Fabric:**
+  
+  Used PySpark notebooks to ingest, transform, and analyze lakehouse data with DataFrames, Delta tables, and visualisations.
+
 ---
 ## Skills Demonstrated
 
