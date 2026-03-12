@@ -31,6 +31,8 @@ Contents:
 
 Files uploaded to: Lakehouse → Files → orders
 
+![Order Files](screenshots/files-uploaded.png)
+
 ---
 
 ## Step 4 - Create Fabric Notebook
@@ -43,6 +45,8 @@ Notebook structure:
 - PySpark code cells
 - Data exploration and visualization
 
+  ![Notebook](screenshots/notebook-created.png)
+
 ---
 
 ## Step 5 - Create Spark DataFrame
@@ -50,6 +54,8 @@ Notebook structure:
 A Spark DataFrame was created by loading CSV files from the lakehouse storage.
 
 Purpose: The wildcard path loads data from multiple CSV files into a single DataFrame.
+
+![DataFrame](screenshots/dataframe-loaded.png)
 
 ---
 
@@ -64,6 +70,8 @@ Several DataFrame operations were performed:
 
 Purpose: To explore and summarize customer information.
 
+![dF Filtering](screenshots/dataframe-filtering.png)
+
 ---
 
 ## Step 7 - Aggregate and Group Data
@@ -71,6 +79,8 @@ Purpose: To explore and summarize customer information.
 Spark SQL functions were used to perform aggregations.
 
 This produced total quantities sold per product.
+
+![Data Aggregation](screenshots/data-aggregation.png)
 
 ---
 
@@ -84,6 +94,8 @@ Transformations included:
 - Splitting CustomerName into FirstName and LastName
 - Reordering columns
 
+![Data Transformation](screenshots/data-transformation.png)
+
 ---
 
 ## Step 9 - Save Transformed Data
@@ -91,6 +103,8 @@ Transformations included:
 The transformed dataset was saved in **Parquet format**.
 
 Purpose: Parquet provides efficient columnar storage optimized for analytics.
+
+![Parquet Files](screenshots/parquet-files.png)
 
 ---
 
@@ -104,6 +118,8 @@ Partition columns:
 
 Partitioning improves query performance by reducing data scanned.
 
+![Data Partitioning](screenshots/partitioned-data.png)
+
 ---
 
 ## Step 11 - Create Delta Table
@@ -112,11 +128,15 @@ The dataset was stored as a Delta Lake table.
 
 Purpose: Delta tables support transactions, schema enforcement, and ACID operations.
 
+![Delta Table](screenshots/delta-table-created.png)
+
 ---
 
 ## Step 12 - Query Using Spark SQL
 
 SQL queries were executed directly against the Delta table.
+
+![Spark SQL](screenshots/sql-query-results.png)
 
 ---
 
@@ -130,6 +150,9 @@ Data was visualized using:
 Example visualization: Revenue by year.
 
 Purpose: To analyze patterns and trends in sales data.
+
+![Viz Code](screenshots/visualization-chart.png)
+![Viz Chart](screenshots/visualization-chart-1.png)
 
 ---
 
