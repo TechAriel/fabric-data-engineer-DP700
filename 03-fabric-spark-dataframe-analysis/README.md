@@ -84,3 +84,6 @@ Sales order dataset containing historical order records.
 ✔ SQL queries executed against the dataset  
 ✔ Data visualized using Python libraries
 
+The full PySpark notebook code used in this exercise is available in:
+
+`/code/spark_dataframe_analysis.py`
