@@ -22,13 +22,18 @@ A sample Eventhouse was created by selecting: **`Explore Real-Time Intelligence 
 
 Fabric automatically deployed: Eventhouse: **RTISample**
 
+![Eventhouse](screenshots/eventhouse-created.png)
+
 ---
 
 ## Step 4 – Explore KQL Database
 
 The Eventhouse contains a **KQL database** with the same name.
 
+![KQL Db](screenshots/kql-database.png)
 Inside the database a table named: `Bikestream` was automatically created and populated with sample event data.
+
+![KQL Db Table](screenshots/bikestream-table.png)
 
 ---
 
@@ -40,11 +45,20 @@ The dataset was explored using Kusto Query Language.
 
 Purpose: Retrieve sample records to understand dataset structure.
 
+![Query for Data Structure](screenshots/kql-query-results.png)
+
 ---
 
 ## Step 6 – Select Specific Columns
 
 Columns were selected using the `project` operator.
+
+Example:
+```
+Bikestream
+| project Street, No_Bikes
+| take 10
+```
 
 ---
 
@@ -52,11 +66,20 @@ Columns were selected using the `project` operator.
 
 Columns were renamed to improve readability.
 
+Example:
+```
+Bikestream
+| project Street, ["Number of Empty Docks"] = No_Empty_Docks
+| take 10
+```
+
 ---
 
 ## Step 8 – Aggregate Data
 
 Data was summarized using the `summarize` operator.
+
+![KQL Data Aggregation](screenshots/kql-aggregation.png)
 
 ---
 
@@ -64,11 +87,23 @@ Data was summarized using the `summarize` operator.
 
 Bike availability was grouped by neighbourhood.
 
+Example:
+```
+Bikestream
+| summarize ["Total Number of Bikes"] = sum(No_Bikes) by Neighbourhood
+```
+
 ---
 
 ## Step 10 – Handle Missing Values
 
 The `case`, `isempty`, and `isnull` functions were used to categorize missing values.
+
+Example:
+```
+| project Neighbourhood =
+case(isempty(Neighbourhood) or isnull(Neighbourhood), "Unidentified", Neighbourhood)
+```
 
 ---
 
@@ -76,11 +111,18 @@ The `case`, `isempty`, and `isnull` functions were used to categorize missing va
 
 Results were sorted alphabetically.
 
+Example:
+```
+| order by Neighbourhood asc
+```
+
 ---
 
 ## Step 12 – Filter Data
 
 Filtering was performed using the `where` operator.
+
+![KQL Data Filtering](screenshots/kql-filtering.png)
 
 ---
 
@@ -91,11 +133,19 @@ Filtering was performed using the `where` operator.
 
 The Eventhouse **T-SQL endpoint** was used to run SQL queries.
 
+![SQL query in KQL Queryset](screenshots/queryset-sql-query-results.png)
+
 ---
 
 ## Step 14 – SQL Aggregation
 
 Bike totals were calculated using SQL aggregation.
+
+Example:
+```
+SELECT SUM(No_Bikes) AS [Total Number of Bikes]
+FROM Bikestream
+```
 
 ---
 
@@ -103,21 +153,16 @@ Bike totals were calculated using SQL aggregation.
 
 Grouped and filtered SQL queries were executed.
 
+Example:
+```
+SELECT Neighbourhood,
+SUM(No_Bikes) AS [Total Number of Bikes]
+FROM Bikestream
+GROUP BY Neighbourhood
+```
+
 ---
 
 ## Step 16 – Clean Up Resources
 
 The workspace was deleted after completing the exercise to remove all associated resources.
-
-
-
-
-
-
-
-
-
-
-
-
-
