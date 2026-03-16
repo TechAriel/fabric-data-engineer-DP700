@@ -29,6 +29,10 @@ Each exercise demonstrates practical implementation of Fabric components used in
   
   Used PySpark notebooks to ingest, transform, and analyze lakehouse data with DataFrames, Delta tables, and visualisations.
 
+- **04 – Fabric Eventhouse & KQL Analytics:**
+
+  Queried real-time event data using Kusto Query Language (KQL) and T-SQL in a Microsoft Fabric Eventhouse.
+
 ---
 ## Skills Demonstrated
 
