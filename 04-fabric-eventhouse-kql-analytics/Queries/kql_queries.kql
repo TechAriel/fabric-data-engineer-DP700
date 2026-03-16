@@ -1,1 +1,56 @@
+//***********************************************************************************************************
+// Here are two articles to help you get started with KQL:
+// KQL reference guide - https://aka.ms/KQLguide
+// SQL - KQL conversions - https://aka.ms/sqlcheatsheet
+//***********************************************************************************************************
 
+// KQL Queries
+
+// Use "take" to view a sample number of records in the table and check the data.
+Bikestream
+| take 100
+
+// use "project" and "take" to view a sample number of records in the table and check the data
+Bikestream
+| project Street, No_Bikes
+| take 10
+
+// renaming "No_Empty_Docks" column name
+Bikestream
+| project Street, ["Number of Empty Docks"] = No_Empty_Docks
+| take 10
+
+// summarizing rental data for total number of bikes available
+Bikestream
+| summarize ["Total Number of Bikes"] = sum(No_Bikes)
+
+// group the number of bikes by neighbourhood
+Bikestream
+| summarize ["Total Number of Bikes"] = sum(No_Bikes) by Neighbourhood
+| project Neighbourhood, ["Total Number of Bikes"]
+
+// group all trips for which the neighbourhood is unknown into a Unidentified category for follow-up.
+Bikestream
+| summarize ["Total Number of Bikes"] = sum(No_Bikes) by Neighbourhood
+| project Neighbourhood = case(isempty( Neighbourhood)or isnull( Neighbourhood), "Unidentified", Neighbourhood), ["Total Number of Bikes"]
+
+// order a Neighbourhood column
+Bikestream
+| summarize ["Total Number of Bikes"] = sum(No_Bikes) by Neighbourhood
+| project Neighbourhood = case(isempty( Neighbourhood)or isnull( Neighbourhood), "Unidentified", Neighbourhood), ["Total Number of Bikes"]
+| order by Neighbourhood asc 
+
+// filter the bikes data to include only bike points in the Chelsea neighbourhood
+Bikestream
+| where Neighbourhood == "Chelsea"
+| summarize ["Total Number of Bikes"] = sum(No_Bikes) by Neighbourhood
+| project Neighbourhood = case(isempty( Neighbourhood) or isnull( Neighbourhood), "Unidentified", Neighbourhood), ["Total Number of Bikes"]
+| sort by Neighbourhood asc 
+
+// See how many records are in the table.
+Bikestream
+| count
+
+// This query returns the number of ingestions per hour in the given table.
+Bikestream
+| summarize IngestionCount = count() by bin(ingestion_time(), 1h)
