@@ -6,6 +6,8 @@ A new workspace was created with Fabric capacity enabled.
 
 Purpose: Provides an isolated environment for lakehouse resources.
 
+![Workspace](screenshots/workspace-created.png)
+
 ---
 
 ## Step 2 – Create Lakehouse
@@ -16,6 +18,8 @@ Configuration: - Lakehouse schemas disabled
 
 Purpose: Acts as a unified storage and analytics layer.
 
+![Lakehouse](screenshots/lakehouse-created.png)
+
 ---
 
 ## Step 3 – Explore Lakehouse Structure
@@ -24,6 +28,8 @@ Two primary components were identified:
 
 - Files → raw data storage
 - Tables → structured Delta tables
+
+![Lakehouse Explorer](screenshots/files-folder.png)
 
 ---
 
@@ -46,6 +52,8 @@ The uploaded CSV file was previewed inside Fabric.
 
 Purpose: Validate structure and schema before transformation.
 
+![CSV file Preview](screenshots/file-preview.png)
+
 ---
 
 ## Step 6 – Explore Shortcuts
@@ -67,6 +75,8 @@ Steps:
 
 Result: Delta table created in lakehouse.
 
+![Delta Table](screenshots/table-created.png)
+
 ---
 
 ## Step 8 – Explore Delta Table Storage
@@ -77,6 +87,8 @@ Underlying storage examined:
 - _delta_log transaction folder
 
 Purpose: Understand Delta Lake architecture and transaction logging.
+
+![Delta Files](screenshots/delta-files.png)
 
 ---
 
@@ -94,6 +106,8 @@ ORDER BY Revenue DESC;
 
 Purpose: Generate revenue insights per product.
 
+![SQL Results](screenshots/sql-query.png)
+
 ---
 
 ## Step 10 – Create Visual Query
@@ -107,6 +121,8 @@ Steps:
 - Counted line items
 
 Purpose: Demonstrates analyst-friendly querying.
+
+![Power Query Visual](screenshots/visual-query.png)
 
 ---
 
