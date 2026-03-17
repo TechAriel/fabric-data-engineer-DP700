@@ -33,6 +33,10 @@ Each exercise demonstrates practical implementation of Fabric components used in
 
   Queried real-time event data using Kusto Query Language (KQL) and T-SQL in a Microsoft Fabric Eventhouse.
 
+- **05 – Fabric Lakehouse Fundamentals:**
+
+  Built a lakehouse, ingested CSV data, converted it to Delta tables, and queried using SQL and Power Query.
+
 ---
 ## Skills Demonstrated
 
