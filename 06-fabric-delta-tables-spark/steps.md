@@ -98,6 +98,8 @@ DROP TABLE external_products
 ```
 Observation: - External table data remains in storage
 
+![External table file](screenshots/external-table-file-not-deleted.png)
+
 ---
 
 ## Step 10 – Create Table Using SQL
@@ -132,6 +134,8 @@ SQL used: `DESCRIBE HISTORY products;`
 
 Purpose: Track changes via Delta transaction log.
 
+![Delta table history](screenshots/history.png)
+
 ---
 
 ## Step 14 – Time Travel Query
@@ -142,6 +146,9 @@ PySpark used:
 - Version 0 read using versionAsOf
 
 Purpose: Demonstrates Delta Lake time travel.
+
+![Time travel code](screenshots/time-travel-code.png)
+![Time travel results](screenshots/time-travel-results.png)
 
 ---
 
@@ -158,6 +165,8 @@ Metrics:
 - Min price
 - Max price
 - Avg price
+
+![aggregartion](screenshots/aggregation.png)
 
 ---
 
@@ -185,6 +194,8 @@ Simulated IoT stream:
 - JSON schema defined
 - Folder-based streaming source created
 
+![Stream source](screenshots/source-stream-created.png)
+
 ---
 
 ## Step 19 – Write Stream to Delta
@@ -194,11 +205,15 @@ Streaming write:
 - Delta sink created in Tables/
 - Checkpointing enabled
 
+![Stream start](screenshots/streaming-start.png)
+
 ---
 
 ## Step 20 – Query Streaming Table
 
 SQL used: `SELECT * FROM IotDeviceData;`
+
+![Steam query](screenshots/streaming-query.png)
 
 ---
 
@@ -207,6 +222,8 @@ SQL used: `SELECT * FROM IotDeviceData;`
 Additional data written to source folder.
 
 Result: - Table updated in near real-time
+
+![Steam update](screenshots/streaming-update.png)
 
 ---
 
