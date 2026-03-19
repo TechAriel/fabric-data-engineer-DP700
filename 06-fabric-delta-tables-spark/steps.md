@@ -46,6 +46,8 @@ PySpark used to define schema and load CSV:
 
 Purpose: Structured data processing using Spark.
 
+![dataframe output](screenshots/dataframe-output.png)
+
 ---
 
 ## Step 6 – Create Managed Delta Table
@@ -80,7 +82,10 @@ DESCRIBE FORMATTED external_products
 Insight:
 
 - Managed → Tables/ path  
-- External → Files/ path  
+- External → Files/ path
+
+![managed table](screenshots/managed-table-location.png)
+![external table](screenshots/external-table-location.png)
 
 ---
 
