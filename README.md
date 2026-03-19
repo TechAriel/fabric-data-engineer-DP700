@@ -37,6 +37,10 @@ Each exercise demonstrates practical implementation of Fabric components used in
 
   Built a lakehouse, ingested CSV data, converted it to Delta tables, and queried using SQL and Power Query.
 
+- **06 – Delta Tables in Spark:**
+
+  Created managed and external Delta tables, implemented versioning, ran SQL queries, and built a streaming data pipeline using Spark.
+
 ---
 ## Skills Demonstrated
 
