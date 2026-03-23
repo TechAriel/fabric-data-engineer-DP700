@@ -27,6 +27,8 @@ Steps:
 
 Purpose: Store raw, unprocessed data.
 
+![Bronze layer](screenshots/bronze-upload.png)
+
 ---
 
 ## Step 4 – Load Bronze Data into DataFrame
@@ -37,6 +39,8 @@ PySpark used to:
 - Load all CSV files using wildcard
 
 Result: Unified DataFrame from multiple files.
+
+![DF Preview](screenshots/dataframe-preview.png)
 
 ---
 
@@ -49,6 +53,8 @@ Transformations applied:
 - Added CreatedTS & ModifiedTS
 - Cleaned CustomerName (null → "Unknown")
 
+![Silver Notebook](screenshots/notebook-silver.png)
+
 ---
 
 ## Step 6 – Create Silver Delta Table
@@ -56,6 +62,8 @@ Transformations applied:
 Table: `sales_silver`
 
 Using Delta Lake schema definition.
+
+![Silver_table](screenshots/silver-table.png)
 
 ---
 
@@ -69,6 +77,8 @@ MERGE operation used:
 
 Purpose: Handle evolving datasets efficiently.
 
+![Upsert Silver](screenshots/merge-operation.png)
+
 ---
 
 ## Step 8 – SQL Analysis (Silver Layer)
@@ -80,11 +90,15 @@ Queries executed:
 
 Purpose: Validate and explore cleaned data.
 
+![SQL Endpoint Silver](screenshots/sql-analysis.png)
+
 ---
 
 ## Step 9 – Gold Layer Notebook
 
 New notebook created: `Transform data for Gold`
+
+![Gold Notebook](screenshots/gold-notebook.png)
 
 ---
 
@@ -96,6 +110,8 @@ Derived columns:
 
 - Day, Month, Year
 - Formatted date fields
+
+![Date Dim Table](screenshots/dimdate.png)
 
 ---
 
@@ -109,6 +125,8 @@ Transformations:
 - Split names (First, Last)
 - Generate surrogate key (CustomerID)
 
+![Customer Dim Table](screenshots/dimcustomer.png)
+
 ---
 
 ## Step 12 – Create Product Dimension
@@ -119,6 +137,8 @@ Transformations:
 
 - Extract ItemName & ItemInfo
 - Generate surrogate key (ItemID)
+
+![Product Dim Table](screenshots/dimproduct.png)
 
 ---
 
@@ -145,6 +165,8 @@ Joins:
 
 Purpose: Create analytical dataset.
 
+![Fact Table Code](screenshots/fact-table-code.png)
+
 ---
 
 ## Step 15 – Upsert into Fact Table
@@ -153,6 +175,8 @@ MERGE used to:
 
 - Insert new transactions
 - Maintain consistency
+
+![Fact Table](screenshots/fact-table.png)
 
 ---
 
@@ -168,6 +192,8 @@ Tables included:
 - factsales_gold
 
 Purpose: Enable BI reporting.
+
+![Semantic Model](screenshots/semantic-model.png)
 
 ---
 
