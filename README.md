@@ -41,6 +41,10 @@ Each exercise demonstrates practical implementation of Fabric components used in
 
   Created managed and external Delta tables, implemented versioning, ran SQL queries, and built a streaming data pipeline using Spark.
 
+- **07 – Medallion Architecture:**
+
+  Built a full Bronze-Silver-Gold data pipeline with Delta Lake, implemented upserts, and modeled a star schema for analytics.
+
 ---
 ## Skills Demonstrated
 
