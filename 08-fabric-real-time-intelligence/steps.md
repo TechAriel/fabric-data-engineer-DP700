@@ -43,7 +43,7 @@ Includes:
 - KQL database
 - Queryset for querying data
 
-![Eventhouse](screenshots/eventhouse-created(2).png)
+![Eventhouse](screenshots/eventhouse-created.png)
 
 ---
 
@@ -58,7 +58,7 @@ Steps:
 
 Result: Streaming data persisted in KQL table.
 
-![KQL db Table](screenshots/table-created(2).png)
+![KQL db Table](screenshots/table-created.png)
 
 ---
 
@@ -70,7 +70,7 @@ Eventstream updated with:
 
 Purpose: Ensure ingestion pipeline is active.
 
-![Stream Destination](sreenshots/stream-destination.png)
+![Stream Destination](screenshots/stream-destination.png)
 
 ---
 
