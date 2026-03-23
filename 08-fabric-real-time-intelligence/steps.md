@@ -17,6 +17,8 @@ Configuration:
 
 Result: Real-time stream created in Fabric.
 
+![Eventstream](screenshots/eventstream-canvas.png)
+
 ---
 
 ## Step 3 – Explore Eventstream
@@ -28,6 +30,8 @@ Components:
 
 Purpose: Visual pipeline for real-time ingestion.
 
+![Eventstream Data Preview](screenshots/eventstream-created.png)
+
 ---
 
 ## Step 4 – Create Eventhouse
@@ -38,6 +42,8 @@ Includes:
 
 - KQL database
 - Queryset for querying data
+
+![Eventhouse](screenshots/eventhouse-created(2).png)
 
 ---
 
@@ -52,6 +58,8 @@ Steps:
 
 Result: Streaming data persisted in KQL table.
 
+![KQL db Table](screenshots/table-created(2).png)
+
 ---
 
 ## Step 6 – Validate Stream Connection
@@ -61,6 +69,8 @@ Eventstream updated with:
 - Destination (Eventhouse table)
 
 Purpose: Ensure ingestion pipeline is active.
+
+![Stream Destination](sreenshots/stream-destination.png)
 
 ---
 
@@ -81,6 +91,8 @@ KQL Query: Average price per stock (last 5 minutes)
 
 Result: Dynamic aggregation of streaming data.
 
+![KQL Query + Results](screenshots/kql-query.png)
+
 ---
 
 ## Step 9 – Create Dashboard
@@ -94,6 +106,8 @@ Steps:
 - Pin query to dashboard
 - Convert table → column chart
 
+![RT Dashboard](screenshots/dashboard-created.png)
+
 ---
 
 ## Step 10 – Enable Real-Time Visualization
@@ -101,6 +115,8 @@ Steps:
 Dashboard updated automatically as new data arrives.
 
 Purpose: Live monitoring of stock prices.
+
+![Column Visual](screenshots/chart-visual.png)
 
 ---
 
@@ -114,6 +130,8 @@ Configuration:
 
 Action: Send email notification
 
+![Activator Alert](screenshots/alert-config.png)
+
 ---
 
 ## Step 12 – Monitor Alert
@@ -122,6 +140,8 @@ Activator tracks:
 
 - Trigger history
 - Alert conditions
+
+![Activator Alert History](screenshots/activator.png)
 
 ---
 
