@@ -1,1 +1,13 @@
+// Query the captured data
 
+//sample of data records from stock table
+
+stock
+| take 100
+
+// retrieve the average price for each stock symbol in the last 5 minutes
+
+stock
+| where ["time"] > ago(5min)
+| summarize avgPrice = avg(todecimal(bidPrice)) by symbol
+| project symbol, avgPrice
