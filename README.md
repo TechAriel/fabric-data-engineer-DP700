@@ -45,6 +45,14 @@ Each exercise demonstrates practical implementation of Fabric components used in
 
   Built a full Bronze-Silver-Gold data pipeline with Delta Lake, implemented upserts, and modeled a star schema for analytics.
 
+- **08 – Real-Time Intelligence:**
+
+  Built a real-time pipeline with Eventstream, Eventhouse, KQL queries, dashboards, and alerts using Activator.
+
+- **09 – Eventstream Transformation:**
+
+  Ingested real-time bicycle data, applied windowed aggregations, and analyzed both raw and transformed streams using KQL.
+
 ---
 ## Skills Demonstrated
 
