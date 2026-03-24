@@ -1,1 +1,13 @@
+-- Raw data (last 24 hours)
+bikes
+| where ingestion_time() between (now(-1d) .. now())
 
+-- Preview transformed data
+['bikes-by-street']
+| take 100
+
+-- Aggregated bike counts per street (time window)
+['bikes-by-street']
+| summarize TotalBikes = sum(tolong(SUM_No_Bikes)) 
+    by Window_End_Time, Street
+| sort by Window_End_Time desc, Street asc
