@@ -27,6 +27,8 @@ Source: Bicycles (sample data)
 
 Result: Real-time event stream connected.
 
+![source](screenshots/bicycle-source.png)
+
 ---
 
 ## Step 5 – Add Raw Data Destination
@@ -40,6 +42,8 @@ Configuration:
 
 - JSON format
 - Event processing before ingestion
+
+![Raw Destination](screenshots/raw-destination.png)
 
 ---
 
@@ -60,6 +64,8 @@ bikes
 ```
 Purpose: Validate ingestion.
 
+![Raw Query](screenshots/kql-raw-query.png)
+
 ---
 
 ## Step 8 – Add Transformation (Group By)
@@ -72,6 +78,8 @@ Configuration:
 - Group by: Street
 - Window: Tumbling (5 seconds)
 
+![GroupBy Transformation](screenshots/groupby-transformation.png)
+
 ---
 
 ## Step 9 – Add Aggregated Destination
@@ -83,11 +91,15 @@ Stores:
 - Aggregated bike counts per street
 - Time window results
 
+![Aggregation Destination](screenshots/aggregated-destination.png)
+
 ---
 
 ## Step 10 – Publish Updated Stream
 
 Transformation pipeline activated.
+
+![Transformed Data Preview](screenshots/transformed-data-preview.png)
 
 ---
 
@@ -100,6 +112,8 @@ KQL Query:
 | sort by Window_End_Time desc
 ```
 Purpose: Analyze aggregated real-time data.
+
+![Aggregated Data Query](screenshots/kql-aggregated-query.png)
 
 ---
 
