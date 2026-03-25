@@ -53,6 +53,10 @@ Each exercise demonstrates practical implementation of Fabric components used in
 
   Ingested real-time bicycle data, applied windowed aggregations, and analyzed both raw and transformed streams using KQL.
 
+- **10 – Real-Time Dashboards (Advanced):**
+
+  Built interactive dashboards with base queries, parameters, maps, and auto-refresh using real-time streaming data.
+
 ---
 ## Skills Demonstrated
 
