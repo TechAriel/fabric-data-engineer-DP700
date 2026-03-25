@@ -1,1 +1,30 @@
+// Base query
+bikes
+| where ingestion_time() between (ago(30min) .. now())
+| summarize latest_observation = arg_max(ingestion_time(), *) by Neighbourhood
 
+// Update base query with "selected_neighbourhoods" parameter
+bikes
+| where ingestion_time() between (ago(30min) ..now() )
+    and (isempty(selected_neighbourhoods) or Neighbourhood in (selected_neighbourhoods))
+| summarize latest_observation = arg_max(ingestion_time(), *) by Neighbourhood
+
+// Bikes and docks chart
+base_bike_data
+| project Neighbourhood, latest_observation, No_Bikes, No_Empty_Docks
+| order by Neighbourhood asc
+
+// Bike locations map
+base_bike_data
+| project Neighbourhood, latest_observation, No_Bikes, Latitude, Longitude
+| order by Neighbourhood asc
+
+// Parameter source query
+bikes
+| distinct Neighbourhood
+| order by Neighbourhood asc
+
+// Page 2 query
+base_bike_data
+| project Neighbourhood, latest_observation
+| order by latest_observation desc
