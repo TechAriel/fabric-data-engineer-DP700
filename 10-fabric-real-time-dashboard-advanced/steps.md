@@ -43,6 +43,8 @@ Dashboard: `bikes-dashboard`
 
 Data source: - Eventhouse (KQL database)
 
+![RT Dashboard](screenshots/dashboard-created.png)
+
 ---
 
 ## Step 7 – Create First Visual (Bar Chart)
@@ -51,6 +53,9 @@ Query: - Bikes vs empty docks per neighbourhood
 
 Visualization: - Stacked bar chart
 
+![Bar Chart Query](screenshots/bar-chart-code.png)
+![Bar Chart](screenshots/bar-chart.png)
+
 ---
 
 ## Step 8 – Create Second Visual (Map)
@@ -58,6 +63,8 @@ Visualization: - Stacked bar chart
 Query: - Bike locations with coordinates
 
 Visualization: - Map with size-based markers
+
+![Map visual](screenshots/map-visual.png)
 
 ---
 
@@ -70,11 +77,15 @@ Purpose:
 - Centralize shared logic
 - Avoid duplication across visuals
 
+![Base Query](screenshots/base-query.png)
+
 ---
 
 ## Step 10 – Refactor Visual Queries
 
 Both visuals updated to use: `base_bike_data`
+
+![Map Visual Query Updated](screenshots/map-visual-query-updated.png)
 
 ---
 
@@ -87,11 +98,18 @@ Features:
 - Multi-select filter
 - Dynamic query filtering
 
+![Parameter Query](screenshots/parameter-query.png)
+![Parameter](screenshots/parameter.png)
+
 ---
 
 ## Step 12 – Update Base Query with Filter
 
 Condition added: `- Filter by selected neighbourhoods`
+
+![Updated Base Query](screenshots/base-query-updated.png)
+
+![Filtered Dashboard](screenshots/filtered-dashboard.png)
 
 ---
 
@@ -100,6 +118,8 @@ Condition added: `- Filter by selected neighbourhoods`
 New page: `Page 2`
 
 Purpose: - Display latest observations
+
+![New Page](screenshots/page-2.png)
 
 ---
 
@@ -110,12 +130,16 @@ Settings:
 - Enabled
 - Default refresh: 30 minutes
 
+![Auto Refresh](screenshots/auto-refresh.png)
+
 ---
 
 ## Step 15 – Save and Share Dashboard
 
 - Dashboard saved
 - Shareable link generated
+
+![Sharing Dashboard via link](screenshots/share-dashboard.png)
 
 ---
 
