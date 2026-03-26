@@ -57,6 +57,10 @@ Each exercise demonstrates practical implementation of Fabric components used in
 
   Built interactive dashboards with base queries, parameters, maps, and auto-refresh using real-time streaming data.
 
+- **11 – Real-Time Alerting with Activator:**
+
+  Built event-driven alerting system with rules, filters, and automated actions on streaming data.
+
 ---
 ## Skills Demonstrated
 
