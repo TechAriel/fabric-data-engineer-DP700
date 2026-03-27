@@ -61,6 +61,10 @@ Each exercise demonstrates practical implementation of Fabric components used in
 
   Built event-driven alerting system with rules, filters, and automated actions on streaming data.
 
+- **12 – Data Warehouse Analytics:**
+
+  Built a relational warehouse using T-SQL, created fact/dimension tables, views, and performed multi-dimensional analysis.
+
 ---
 ## Skills Demonstrated
 
