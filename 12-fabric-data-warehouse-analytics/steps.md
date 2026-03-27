@@ -13,6 +13,8 @@ Warehouse created with:
 - Full SQL support
 - Relational engine
 
+![Data Whouse](screenshots/warehouse-created.png)
+
 ---
 
 ## Step 3 – Create Table (DimProduct)
@@ -27,22 +29,28 @@ Columns:
 - Category
 - ListPrice
 
+![Sample DimProduct table](screenshots/dimproduct-table.png)
+
 ---
 
 ## Step 4 – Insert Data
 
 Inserted sample product records using: `INSERT INTO` statement
 
+![Data Inserted into DimProduct](screenshots/data-inserted.png)
+
 ---
 
 ## Step 5 – Load Full Schema
 
-Executed external SQL script to create:
+Executed SQL script to create:
 
 - DimCustomer
 - DimDate
 - DimProduct
 - FactSalesOrder
+
+![Warehouse Schema](screenshots/full-schema.png)
 
 ---
 
@@ -52,6 +60,8 @@ Query: - Joined FactSalesOrder with DimDate
 
 Result: - Sales aggregated by Year and Month
 
+![Sales by Year Query](screenshots/sales-query.png)
+
 ---
 
 ## Step 7 – Multi-Dimensional Query
@@ -59,6 +69,8 @@ Result: - Sales aggregated by Year and Month
 Extended query: - Joined DimCustomer
 
 Result: - Sales by Year, Month, Region
+
+![Sales by Year and Region Query](screenshots/sales-region-query.png)
 
 ---
 
@@ -71,11 +83,15 @@ Purpose:
 - Encapsulate aggregation logic
 - Reuse query logic
 
+![View sample](screenshots/view-created.png)
+
 ---
 
 ## Step 9 – Query View
 
 Used: SELECT FROM vSalesByRegion
+
+![Query on View](screenshots/view-query.png)
 
 ---
 
@@ -86,6 +102,8 @@ Used drag-and-drop interface:
 - Joined FactSalesOrder + DimProduct
 - Expanded ProductName
 - Applied filter (Cable Lock)
+
+![Visual Query](screenshots/visual-query-wh.png)
 
 ---
 
@@ -98,6 +116,8 @@ Created relationships:
 - Fact → Date
 
 Schema: - Star schema design
+
+![Star Schema](screenshots/semantic-model-wh.png)
 
 ---
 
