@@ -68,6 +68,11 @@ Each exercise demonstrates practical implementation of Fabric components used in
 - **13 – Lakehouse to Warehouse ETL:**
 
   Built an end-to-end ETL pipeline using T-SQL to load data from a lakehouse into a warehouse with fact/dimension modeling.
+
+- **14 – Data Warehouse Query & Validation:**
+
+  Performed SQL analytics, data quality checks, cleansing, and created reusable views in a Fabric warehouse.
+  
 ---
 ## Skills Demonstrated
 
