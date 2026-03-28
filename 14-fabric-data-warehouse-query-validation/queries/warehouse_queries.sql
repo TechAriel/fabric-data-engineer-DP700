@@ -55,3 +55,12 @@ WHERE TripDurationSeconds < 0;
 
 /* There are several ways to handle inconsistent data rather than removing it
  one alternative is to replace it with a different value such as the mean or median.*/
+
+
+-- Query View
+-- Query on vw_JanTrip view for Day of the month with highest average trip duration and distance
+
+SELECT TOP 1 DayName, MAX(AvgDuration) AS AvgDuration, MAX(AvgDistance) AS AvgDistance
+FROM vw_JanTrip
+GROUP BY DayName
+ORDER BY AvgDuration DESC, AvgDistance DESC;
