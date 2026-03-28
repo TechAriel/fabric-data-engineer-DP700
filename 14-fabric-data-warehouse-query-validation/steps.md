@@ -85,14 +85,17 @@ Purpose:
 - Filter trips for January
 - Simplify reporting queries
 
+![View](screenshots/view-created.png)
+
 ---
 
 ## Step 7 – Save & Validate View
 
 - View stored in dbo schema
-- Can be queried for reporting use
+- Queried for reporting use
+    - Day of Week with highest Average Duration & Distance
 
-![View](screenshots/view-created.png)
+![Query on View](screenshots/view-results.png)
 
 ---
 
