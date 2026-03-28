@@ -12,6 +12,8 @@ Warehouse: `sample-dw`
 
 - Preloaded with taxi trip dataset
 
+![Sample Data Warehouse](screenshots/sample-warehouse.png)
+
 ---
 
 ## Step 3 – Query Aggregated Data
@@ -23,6 +25,8 @@ Warehouse: `sample-dw`
   - Total trips
   - Total revenue
 
+![Trips & Revenue by Month](screenshots/query-monthly-revenue-&-trips.png)
+
 ---
 
 ### Query 2 – Average Trip Metrics
@@ -32,12 +36,16 @@ Warehouse: `sample-dw`
   - Average trip distance
 - Grouped by day of week
 
+![Avg Trip Metrics by Day of Week](screenshots/query-avg-duration-&-distance.png)
+
 ---
 
 ### Query 3 – Top Locations
 
 - Identified top 10 cities by trip volume
 - Joined Trip and Geography tables
+
+![Top Cities by trip Vol](screenshots/top-cities.png)
 
 ---
 
@@ -47,11 +55,15 @@ Warehouse: `sample-dw`
 
 - Identified trips longer than 24 hours
 
+![Trips Longer than Usual](screenshots/data-validation-long-trips.png)
+
 ---
 
 ### Check 2 – Negative Durations
 
 - Detected invalid negative values
+
+![Trips with negative duration](screenshots/negative-duration-check.png)
 
 ---
 
@@ -79,6 +91,8 @@ Purpose:
 
 - View stored in dbo schema
 - Can be queried for reporting use
+
+![View](screenshots/view-created.png)
 
 ---
 
