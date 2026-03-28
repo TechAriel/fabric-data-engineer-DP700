@@ -1,4 +1,4 @@
-# 14 – Querying & Validating Data in Microsoft Fabric Warehouse
+# Querying & Validating Data in Microsoft Fabric Warehouse
 
 This project demonstrates how to **query, validate, and prepare data** for analytics using a Microsoft Fabric Data Warehouse.
 
