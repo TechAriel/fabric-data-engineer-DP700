@@ -88,7 +88,7 @@ Purpose: - Generate workload for monitoring
 ### exec_requests_history
 
 - Historical query execution details
-![Query History](screenshots/query-history.png)
+![Query History](screenshots/queries-history.png)
 ---
 
 ### frequently_run_queries
