@@ -76,6 +76,10 @@ Each exercise demonstrates practical implementation of Fabric components used in
 - **15 – Data Warehouse Monitoring:**
 
   Monitored warehouse activity using DMVs and Query Insights to analyse performance and optimise query execution.
+
+- **16 – Data Warehouse Security:**
+
+  Implemented dynamic data masking, row-level security, column-level security, and granular SQL permissions in Fabric.
   
 ---
 ## Skills Demonstrated
