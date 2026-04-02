@@ -84,7 +84,10 @@ Each exercise demonstrates practical implementation of Fabric components used in
 - **17 – Deployment Pipelines:**
 
   Implemented Dev-Test-Prod workflow with Fabric deployment pipelines for controlled releases.
-  
+
+- **18 – Monitoring Hub:**
+
+  Monitored Fabric workloads including Dataflows and Spark notebooks using the Monitoring Hub with filters and run history.
 ---
 ## Skills Demonstrated
 
