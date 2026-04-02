@@ -80,6 +80,10 @@ Each exercise demonstrates practical implementation of Fabric components used in
 - **16 – Data Warehouse Security:**
 
   Implemented dynamic data masking, row-level security, column-level security, and granular SQL permissions in Fabric.
+
+- **17 – Deployment Pipelines:**
+
+  Implemented Dev-Test-Prod workflow with Fabric deployment pipelines for controlled releases.
   
 ---
 ## Skills Demonstrated
