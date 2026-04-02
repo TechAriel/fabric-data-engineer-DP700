@@ -29,14 +29,15 @@ Output: - Table: `products` (lakehouse)
 - Observed in Monitoring Hub
 - Status tracked:
   - In-progress → Succeeded
-
+![Dataflow running](screenshots/dataflow-running.png)
+![Dataflow succeeded](screenshots/dataflow-succeeded.png)
 ---
 
 ## Step 5 – Validate Data Load
 
 - products table created
 - Data successfully ingested
-
+![Lakehouse Product Table](screenshots/products-table.png)
 ---
 
 ## Step 6 – Create Spark Notebook
@@ -55,6 +56,8 @@ Actions:
 
 - Notebook execution visible in Monitoring Hub
 - Spark session lifecycle tracked
+  
+![Notebook Activity](screenshots/notebook-results.png)
 
 ---
 
@@ -63,6 +66,9 @@ Actions:
 - Re-ran Dataflow
 - Accessed historical runs
 - Viewed execution details
+
+![Historical Runs](screenshots/historical-runs.png)
+![Execution Details](screenshots/run-details.png)
 
 ---
 
@@ -73,6 +79,8 @@ Filters applied:
 - Status: Succeeded
 - Item type: Dataflow Gen2
 
+![Filtered for Dataflow](screenshots/filtered-view.png)
+
 Columns added:
 
 - Status
@@ -81,6 +89,8 @@ Columns added:
 - End time
 - Duration
 - Refresh type
+
+![Columns Added to View Details](screenshots/custom-columns.png)
 
 ---
 
